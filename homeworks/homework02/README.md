@@ -52,7 +52,7 @@ sequence.gb<br>
 slides<br>
 vader.txt<br>
 
-## Problem 1 Code Below ##
+## Problem 1 Code Below 
 _output_file="question01.txt"
 new_dir="homework02"
 username=$(whoami)
@@ -96,7 +96,7 @@ tfcb_2023/homeworks/homework02/list.txt
 
 You can make the contents of those files whatever you want (hint: slide 9... )
 
-## Problem 2 Code Below ##
+## Problem 2 Code Below 
 
 _base_dir="$HOME/homework02"
 new_dir="$base_dir/question02"
