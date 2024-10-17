@@ -11,7 +11,7 @@ Replace the lines specified in _italics_ with your answers and save as a text fi
 
 Complete the interactive tutorial.
 
-_Did you hit any points of frustration, and if so, how could we improve the material to avoid that frustration?_
+_Completed. The instructions for the tutorial were simple._
 
 
 ## Problem 1
@@ -52,7 +52,29 @@ sequence.gb<br>
 slides<br>
 vader.txt<br>
 
-_Paste your SCRIPT here (not the output)_
+_output_file="question01.txt"
+new_dir="homework02"
+username=$(whoami)
+home_dir=$HOME
+target_dir="$home_dir/tfcb_2023/lectures/lecture04"
+echo "My username is $username"
+  echo
+  echo "My home directory is $home_dir"
+  echo
+  echo 'The contents of the tfcb_2023/lectures/lecture04/ directory are <br>
+01-first-steps.md<br>
+02-directories<br>
+03-redirection<br>
+04-vim<br>
+05-history<br>
+06-scripting<br>
+07-more-interactive-shell<br>
+README.md<br>
+quickref.md<br>
+sequence.gb<br>
+slides<br>
+vader.txt<br>'_ 
+
 
 
 ## Problem 2
@@ -75,6 +97,17 @@ tfcb_2023/homeworks/homework02/list.txt
 
 You can make the contents of those files whatever you want (hint: slide 9... )
 
-_Paste your SCRIPT here (not the output)_
+_base_dir="$HOME/homework02"
+new_dir="$base_dir/question02"
+list_file="$HOME/tfcb_2024/homeworks/homework02/list.txt"
+mkdir -p "$new_dir"
+while IFS= read -r number; do
+formatted_number=$(printf "%03d" "$number")
+  file_path="$new_dir/file$formatted_number.txt"
+  echo "This is file number $formatted_number" > "$file_path"
+  
+done < "$list_file"
+
+echo "Files have been created in $new_dir."_
 
 
