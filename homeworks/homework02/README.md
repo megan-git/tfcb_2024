@@ -52,15 +52,14 @@ sequence.gb<br>
 slides<br>
 vader.txt<br>
 
+## Problem 1 Code Below ##
 _output_file="question01.txt"
 new_dir="homework02"
 username=$(whoami)
 home_dir=$HOME
 target_dir="$home_dir/tfcb_2023/lectures/lecture04"
-echo "My username is $username"
-  echo
-  echo "My home directory is $home_dir"
-  echo
+echo 'My username is $username'
+  echo 'My home directory is $home_dir'
   echo 'The contents of the tfcb_2023/lectures/lecture04/ directory are <br>
 01-first-steps.md<br>
 02-directories<br>
@@ -96,6 +95,8 @@ the ### should be the numbers from a list you can find here:
 tfcb_2023/homeworks/homework02/list.txt
 
 You can make the contents of those files whatever you want (hint: slide 9... )
+
+## Problem 2 Code Below ##
 
 _base_dir="$HOME/homework02"
 new_dir="$base_dir/question02"
